@@ -51,9 +51,11 @@ export default function Header() {
             <input type="password" name="password" id="password" value={password}
             onChange={(event)=> setPassword(event.target.value)}/>
         </label>
+        {!user ? ( <>
         <button onClick={handleSignup}>Sign Up</button>
         <button onClick={handleLogin}>Login</button>
-        <button onClick={logout}>Logout</button>
+        </> ) : (
+        <button onClick={logout}>Logout</button> )}
     </header>
   )
 }
