@@ -11,6 +11,7 @@ export default function Pets({ pets }) {
           <p>Type of Pet: {pet.type}</p>
           <p>Age: {pet.age}</p>
           <p>Breed: {pet.breed}</p>
+          <p>Description: {pet.description}</p>
         </li>
       ))}
     </ul>

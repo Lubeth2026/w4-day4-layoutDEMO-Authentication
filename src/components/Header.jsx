@@ -43,6 +43,7 @@ export default function Header() {
   return (
     <header>
         <h1>Test!</h1>
+        {/*Authentication Form*/}
         <label htmlFor="email">Email:
             <input type="email" name="email" id="email" value={username} 
             onChange={(event)=> setUsername(event.target.value)}/>
